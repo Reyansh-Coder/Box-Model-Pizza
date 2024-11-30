@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pizza World</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        /* Box Model Example */
+        .box-container {
+            display: flex;
+            gap: 20px;
+            margin: 20px;
+            justify-content: center;
+        }
+
+        .box {
+            width: 220px;
+            background-color: #ffe082;
+            padding: 20px;
+            border: 5px solid #e6b800;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 8px #aaa;
+        }
+
+        /* Float Example */
+        .float-section {
+            margin: 20px;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .float-section img {
+            width: 150px;
+            height: 150px;
+        }
+
+        img#pizzaLeft {
+            float: left;
+            margin: 10px;
+        }
+
+        img#pizzaRight {
+            float: right;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #c9302c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Pizza World</h1>
+        <p>Your guide to everything pizza: origin, making, and more!</p>
+    </header>
+    <!-- Box Model Section -->
+    <section id="origin">
+        <h2 style="text-align: center; margin: 20px;">The Origin of Pizza</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Ancient Beginnings</h3>
+                <p>Pizza traces back to ancient flatbreads in Greece and Egypt, topped with herbs and olive oil.</p>
+            </div>
+            <div class="box">
+                <h3>Modern Pizza</h3>
+                <p>Modern pizza as we know it originated in Naples, Italy, in the 18th century.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Float Section -->
+    <section id="making">
+        <h2 style="text-align: center; margin: 20px;">How to Make Pizza</h2>
+        <div class="float-section">
+            <img id="pizzaLeft" src="20211115-OONI-PIZZA-ARMENIAN-ANDREW-JANJIGIAN-23-5447ecc61b12450d9a09f38cca67c19c.jpg" alt="Pizza Dough">
+            <img id="pizzaRight" src="Toaster-Oven-Frozen-Pizza-1024x683.jpg" alt="Baking Pizza">
+            <p>
+                Making pizza starts with preparing the dough, followed by adding a rich tomato sauce and your favorite
+                toppings. Finally, bake it in a wood-fired oven for the best flavor!
+            </p>
+        </div>
+    </section>
+
+    <!-- Additional Section -->
+    <section id="types">
+        <h2 style="text-align: center; margin: 20px;">Popular Pizza Types</h2>
+        <div class="box-container">
+            <div class="box">
+                <h3>Margherita</h3>
+                <p>A classic pizza topped with fresh tomatoes, mozzarella, and basil.</p>
+            </div>
+            <div class="box">
+                <h3>Pepperoni</h3>
+                <p>A favorite among many, featuring spicy pepperoni slices.</p>
+            </div>
+            <div class="box">
+                <h3>Veggie</h3>
+                <p>A healthy option loaded with fresh vegetables like bell peppers, onions, and mushrooms.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Made By Reyansh Garg</p>
+    </footer>
+</body>
+
+</html>
